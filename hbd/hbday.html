@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Happy Birthday babe :)</title>
+  <link rel="shortcut icon" type="image/png" href="https://cdn1.iconfinder.com/data/icons/party-flat-2/512/birthday_party_happy_popper_-512.png"/>
+  <link rel="stylesheet" href="styles/flexbox-center-container.css" media="all">
+  <link rel="stylesheet" href="styles/system-fonts.css" media="all">
+  <link rel="stylesheet" href="styles/style.css" media="all">
+</head>
+
+<body>
+  <audio id="divAudio" loop>
+    <source src="hbd.mp3" type="audio/mp3">
+  </audio>
+  
+  <script>
+    var vAudio = document.getElementById("divAudio");
+    function playMusic()
+    {
+        vAudio.play();
+    }
+  </script>
+  <canvas id=c></canvas>
+  <canvas id="confetti"></canvas>
+  <div class="container" id="count">
+    <h1 id="head"><!-- Countdown to fraulein's B-day: --></h1>
+    <ul>
+      <li><span id="day"></span><!--days--></li>
+      <li><span id="hour"></span><!--hours--></li>
+      <li><span id="minute"></span><!--minutes--></li>
+      <li><span id="second"></span><!--seconds--></li>
+    </ul>
+  </div>
+  <div id="merrywrap" class="merrywrap">
+    <canvas id="snowfall"></canvas>
+    <div class="giftbox" onclick="playMusic();">
+      <div class="cover">
+        <div></div>
+      </div>
+      <div class="box"></div>
+    </div>
+</body>
+<script src="scripts/confetti.min.js" charset="utf-8"></script>
+<script src="scripts/index.js" charset="utf-8"></script>
+
+<body>
+
+<style>
+.button {
+  transition-duration: 0.4s;
+  background-color: #ffffff;
+}
+
+.button:hover {
+  background-color: pink;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+</style>
+    <div id = "nextbutton" align="right">
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+    $(document).ready(function() {
+      $('#nextbutton').hide().delay(17000).fadeIn(2200);
+});
+    </script>
+    <h2><font color=#2e2d2d><em><strong>Click below, sweetpie)</strong></em></font></h2>
+
+    <button class="button" style="vertical-align:middle; margin-right: 30px; margin-top: 10px; border: none; padding: 15px 32px; text-align: center; display: inline-block;border-radius: 8px;"><span><a href="../choice/index.html" style="color:purple; font-size: 20px; width: 250px; text-decoration: underline overline dotted pink;"> <strong>||>>Next<<||</strong> </a></span></button> <!-- change domain here -->
+    </div>
+<body oncontextmenu="return false"></body>
+</body> <!-- If something fucked up.. remove this line -->
+</html>
