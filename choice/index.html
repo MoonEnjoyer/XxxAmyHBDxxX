@@ -1,1 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Make a choice!.. again ;)</title>
+  <!-- <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400" rel="stylesheet"> -->
+  <link rel="shortcut icon" type="image/png" href="https://cdn.iconscout.com/icon/premium/png-512-thumb/choice-making-536746.png"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<div onmousemove="playMusic()">
+  <audio id="divAudio" loop>
+   <source src="choicemusic.mp3" type="audio/mp3">
+  </audio>
+  <script>
+    var vAudio = document.getElementById("divAudio");
+    function playMusic()
+    {
+        vAudio.play();
+    }
+  </script>
+
+<h2 align="center" class="glow" style="font-family: cursive;">Choose your door </h2>
+
+<p class="pargh1">Here we are again, 3 choices and this time one contains a gift!.. have fun, my nysgerrig love :)</p>
+</div>
+
+<div class="row" onmousemove="playMusic()">
+  <div class="column" onmousemove="playMusic()">
+    <a href="video/video2.html">
+    	<img src="im1.png" alt="Somethin' fucked up here, oopsies" style="width:50%; display: block; margin-left: auto; margin-right: auto;">
+	</a>
+  </div>
+  <div class="column" onmousemove="playMusic()">
+    <a href="/qr_img/index.html">
+    	<img src="im2.png" alt="Somethin' fucked up here, oopsies" style="width:50%; display: block; margin-left: auto; margin-right: auto;">
+    </a>
+  </div>
+  <div class="column" onmousemove="playMusic()">
+    <a href="video/video1.html">
+    	<img src="im3.png" alt="Somethin' fucked up here, oopsies" style="width:50%; display: block; margin-left: auto; margin-right: auto;">
+    </a>
+  </div>
+</div>
+
+</body>
+</html>
